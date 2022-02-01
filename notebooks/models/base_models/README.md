@@ -6,4 +6,4 @@ The notebook should serve as a template to produce training data for a specified
 
 ## `train-model-XX.ipynb`
 
-Fits `XGBRanker` to a specified training dataset. These notebooks differ only in 
+Fits `XGBRanker` to a specified training dataset. These notebooks differ only in hyperparameters and the path to the folder containing tranining data.
