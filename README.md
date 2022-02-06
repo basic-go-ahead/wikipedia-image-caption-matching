@@ -1,11 +1,11 @@
 # wikipedia-image-caption-matching
 This is the 3rd place solution code for [the Wikipedia - Image/Caption Matching Competition on Kaggle](https://www.kaggle.com/c/wikipedia-image-caption).
 
-## Data Preparation
+## [Data Preparation](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation)
 
-## Filtering
+## [Filtering](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/filtering)
 
-## Ranking
+## [Ranking](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/ranking)
 
 Now, for each image, the matching problem comes to ranking its candidates with `XGBRanker`.
 
