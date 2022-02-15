@@ -3,6 +3,51 @@ This is the 3rd place solution code for [the Wikipedia - Image/Caption Matching 
 
 ## [Data Preparation](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation)
 
+
+### Basic Preprocessing ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/traindataset-part0-4-count-5.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-dataset.ipynb))
+
+![Basic Preprocessing](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/images/dfd-basic-preprocessing.png?raw=true)
+
+### Image Data Preparation
+
+![Image Data Preparation](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/images/dfd-image-data-preparation.png?raw=true)
+
+#### Translating Image Filenames ([train🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/trans-fn-traindataset-part0-4-count-5-part5-5.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-trans-filename.ipynb))
+
+#### Calculating SEs for original filenames ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/undigit-filename-sentence-embeddings.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-undigit-filename-sentence-embeddings.ipynb))
+
+#### Forming Final Image Dataset ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/final-image-traindataset-part0-4-count-5.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-final-image-dataset.ipynb))
+
+#### Calculating SEs for translated filenames ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/translated-filename-sentence-embeddings.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-translated-filename-sentence-embeddings.ipynb))
+
+#### Calculating ITEs for images ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/train-image-embeddings-sizes.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-image-embeddings-sizes.ipynb))
+
+### Candidate Data Preparation
+
+![Candidate Data Preparation](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/images/dfd-candidate-data-preparation.png?raw=true)
+
+#### Translating page titles ([train🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/trans-title-traindataset0-5-part0-21.ipynb) | [test🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-trans-page-title-1-6.ipynb))
+
+#### Translating captions ([train🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/trans-cap-traindataset0-5-part21-24.ipynb) | [test🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-trans-caption-1-6.ipynb))
+
+#### Forming Final Candidate Dataset ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/combiner-target-dataset-0-of-5.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-combiner-target-dataset.ipynb))
+
+#### Calculating Caption SEs ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/caption-sentence-embeddings.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-caption-sentence-embeddings.ipynb))
+
+#### Calculating Page Title SEs ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/pagetitle-sentence-embeddings.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-pagetitle-sentence-embeddings.ipynb))
+
+#### NER for captions ([train🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/caption-original-ner-part1-3.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-caption-final-ner.ipynb))
+
+#### NER for page titles ([train🧩](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/title-final-ner-part1-3.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-title-final-ner.ipynb))
+
+#### Calculating ITEs for original candidates ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/train-undigit-target-512-embeddings.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-undigit-target-512-embeddings.ipynb))
+
+#### Calculating ITEs for translated candidates ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/train-final-target-512-embeddings.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-final-target-512-embeddings.ipynb))
+
+#### Building Containers ([train](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/train/train-target-containers.ipynb) | [test](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/data_preparation/test/test-target-containers.ipynb))
+
+
+
 ## [Filtering](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/filtering)
 
 ## [Ranking](https://github.com/basic-go-ahead/wikipedia-image-caption-matching/blob/main/notebooks/ranking)
